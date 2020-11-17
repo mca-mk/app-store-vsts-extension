@@ -145,6 +145,8 @@ $(Specified Directory)
    ├ secondary_first_sub_category.txt
    ├ secondary_second_sub_category.txt
 ```
+More information about metadata folder options you can find [here](http://docs.fastlane.tools/actions/deliver/#available-metadata-folder-options).
+
 
 4. **Upload Screenshots** *(Checkbox)* - Upload screenshots of the app to the App Store.
 
