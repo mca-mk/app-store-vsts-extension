@@ -114,7 +114,37 @@ Allows you to release updates to your iOS TestFlight beta app or production app 
 
 2. **Upload Metadata** *(Checkbox)* - Upload app metadata to the App Store (e.g. title, description, changelog).
 
-3. **Metadata Path** *(File path)* - Path to the metadata to publish.
+3. **Metadata Path** *(File path)* - Path to the metadata to publish. Expects a format similar to fastlane’s [deliver tool](https://github.com/fastlane/fastlane/tree/master/deliver#readme) which is summarized below:
+ 
+```
+$(Specified Directory)
+   ├ copyright.txt
+   ├ $(languageCodes)
+   |    ├ description.txt
+   |    ├ keywords.txt
+   |    ├ marketing_url.txt
+   |    ├ name.txt
+   |    ├ privacy_url.txt
+   |    ├ release_notes.txt
+   |    ├ support_url.txt
+   |    ├ subtitle.txt
+   |    ├ apple_tv_privacy_policy.txt
+   |    ├ promotional_text.txt
+   ├ review_information
+   |    ├ review_first_name.txt
+   |    ├ review_last_name.txt
+   |    ├ review_phone_number.txt
+   |    ├ review_email.txt
+   |    ├ review_demo_user.txt
+   |    ├ review_demo_password.txt
+   |    ├ review_notes.txt
+   ├ primary_category.txt
+   ├ secondary_category.txt
+   ├ primary_first_sub_category.txt
+   ├ primary_second_sub_category.txt
+   ├ secondary_first_sub_category.txt
+   ├ secondary_second_sub_category.txt
+```
 
 4. **Upload Screenshots** *(Checkbox)* - Upload screenshots of the app to the App Store.
 
